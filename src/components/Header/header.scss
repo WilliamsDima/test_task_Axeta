@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    background: #dedede;
+    padding: 4rem 15rem 1.5rem 15rem;
+
+    .header_print {
+        position: absolute;
+        top: 4rem;
+        right: 26rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: transparent;
+
+        img {
+            margin-right: 8px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #3483CC;
+        }
+
+        &:hover {
+            p {
+                color: red;
+            }
+           
+        }
+    }
+}

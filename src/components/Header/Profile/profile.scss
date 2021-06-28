@@ -1,0 +1,160 @@
+.profile {
+    display: flex;
+
+    .profile_avatar {
+        position: relative;
+        
+        .user-avatar {
+            width: 168px;
+            border-radius: 50%;
+            border: 4px solid #FFFFFF;
+        }
+
+        .select-photo {
+            display: none;
+        }
+
+        .user-edit-avatar {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            background: #3483CC;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 3px 5px;
+            opacity: 0;
+            z-index: 2;
+            transition: all .2s linear;
+            font-size: 0;
+        }
+        margin-right: 2.5rem;
+
+        &:hover {
+            .user-edit-avatar {
+                opacity: 1;
+            }
+        }
+    }
+
+    .profile_info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+
+        .error-text {
+            color: red;
+            font-size: 1.4rem;
+            margin-left: 2rem;
+        }
+
+        .error {
+            margin-left: -25px;
+            color: #fff;
+            background-color: red;
+            z-index: 4;
+            font-size: 1rem;
+            padding: 3px;
+            border-radius: 50%;
+            line-height: 1;
+
+            &.on {
+                color: #fff;
+                background-color: green;
+                content: 'no error';
+            }
+        }
+
+        input {
+            border: none;
+            background: rgba(0, 0, 0, 0.06);
+            border-bottom: 1px solid #000;
+        }
+        
+        .profile_info_name {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 4rem;
+            margin-bottom: 8px;
+        }
+
+        .profile_info_location {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .profile_info_language {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            img {
+                margin-right: 8px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .profile_info_expretionce {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .empti-exp {
+                margin-right: 2rem;
+            }
+
+            .profile_info_expretionce_item {
+                position: relative;
+                background: #333333;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+                margin-right: 1.5rem;
+
+                .delete-item {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    opacity: 0;
+                    visibility: hidden;
+                    color: #fff;
+                    background-color:red;
+                    border-radius: 50%;
+                    padding: 3px;
+                    font-size: 0.7rem;
+                    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all .2s;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    background: lighten($color: #333333, $amount: 30);
+                    .delete-item {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            .profile_info_expretionce_add {
+                background: #333333;
+                color: #fff;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                line-height: 1;
+                transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) all .2s;
+
+                &:hover {
+                    background: lighten($color: #333333, $amount: 30) ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.content {
+    padding: 5.5rem 15rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.9fr 1.1fr; 
+    gap: 70px 25px; 
+    grid-template-areas: 
+        "p e s a"
+        "r r map map"; 
+}
+
+.user-map { grid-area: map; }
+.portfolio { grid-area: p; }
+.experience { grid-area: e; }
+.sample-code { grid-area: s; }
+.availability { grid-area: a; }
+.reviews { grid-area: r; }

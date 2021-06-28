@@ -1,0 +1,34 @@
+.reviews {
+    display: flex;
+    .reviews_item {
+        margin-right: 6rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        h1, p {
+            font-size: 2.4rem;
+            margin-bottom: 2.5rem;
+        }
+        p {
+            position: relative;
+            font-size: 1.6rem;
+            text-align: center;
+            
+            img {
+                position: absolute;
+                opacity: .3;
+            }
+
+            .left {
+                left: -40px;
+                top: -15px;
+            }
+
+            .right {
+                right: -15px;
+                bottom: -20px;
+            }
+
+        }
+    }
+}

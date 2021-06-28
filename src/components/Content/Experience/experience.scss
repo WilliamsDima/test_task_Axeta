@@ -1,0 +1,52 @@
+.experience {
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 1.6rem;
+        color: #3483CC;
+        line-height: 1;
+
+        li {
+            display: flex;
+            margin-bottom: 8px;
+
+            input {
+                width: 5rem;
+                border: none;
+                background: rgba(0, 0, 0, 0.06);
+                border-bottom: 1px solid #000;
+            }
+
+            .skills-item {
+                &:hover {
+                    color: red;
+                }
+            }
+
+            p {
+                margin-right: 1rem;
+                font-weight: 700;
+                color: #000;
+
+                &:last-child {
+                    margin-right: 0;
+                    font-weight: 500;
+                    color: inherit;
+                    border-bottom: 1px dotted #000;
+                    border-color: inherit;
+                }
+            }
+
+            &:before {
+                content:  "—";
+                position: relative;
+                left:     -5px;
+                color: #000;
+            }
+        }
+    }
+}
